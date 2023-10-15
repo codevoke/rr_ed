@@ -13,7 +13,7 @@ import About from './Desktop/Pages/About';
 // mobile version
 import MobileHeader from './Mobile/Components/Header';
 import MobileMainPage from './Mobile/Pages/MainPage';
-import MobileHomeworkNavPage from './Mobile/Pages/Homework_nav';
+// import MobileHomeworkNavPage from './Mobile/Pages/Homework_nav';
 import MobileAboutPage from './Mobile/Pages/About';
 
 import './App.css';
