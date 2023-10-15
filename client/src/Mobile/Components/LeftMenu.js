@@ -1,6 +1,5 @@
 import { Drawer, List, ListItemButton, ListItemText } from "@mui/material";
 import { useNavigate } from 'react-router-dom';
-import { useState, useEffect } from "react";
 
 export default function LeftMenu (props) {
     
