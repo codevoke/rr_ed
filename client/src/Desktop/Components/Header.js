@@ -40,7 +40,7 @@ export default function Header () {
 
     const fake_auth = () => {
         setAuthed(true)
-        setUsername("Леха Нечаев")
+        setUsername("Алексей Нечаев")
         setAvatar("https://sun112-2.userapi.com/s/v1/if1/LCNvEjLj_R0GBuEWvitV5fCH09TCZ7U_cGgoT3oJLi_21BuI1R4_RhknR2jyQ2MzPinvbd0x.jpg?size=400x400&quality=96&crop=0,0,769,769&ava=1")
     }
     const fake_logout = () => {

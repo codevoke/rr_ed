@@ -15,7 +15,7 @@ export default function MobileHeader() {
         <>
             <LeftMenu isOpen={drawerState} setIsOpen={setDrawerState}/>
             <Box sx={{ flexGrow: 1 }}>
-                <AppBar position="fixed">
+                <AppBar position="fixed" style={{ color: 'white', height:'60px' }}>
                     <Toolbar>
                     <IconButton
                         size="large"

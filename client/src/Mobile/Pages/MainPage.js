@@ -1,7 +1,16 @@
-export default function MobileMainPage() {
+import styled from "@emotion/styled"
+
+const BackgroundImage = styled("div") ({
+    height: 'calc(100vh - 60px)',
+    position: 'relative', 
+    background: 'url("/MainPage_bg.jpg")',
+    backgroundRepeat: 'no-repeat',
+    backgroundSize: 'cover',
+    backgroundPositionX: 'center'
+})
+
+export default function MobileMainPage () {
     return (
-        <div style={{width: '100vw', height: '100vh', position: 'relative'}}>
-            <img style={{position: 'relative', width:'100%', height:'100%'}} src="/MainPage_bg.jpg" alt="general page background"></img>
-        </div>
+        <BackgroundImage />
     )
 }
