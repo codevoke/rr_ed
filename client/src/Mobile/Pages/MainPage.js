@@ -1,7 +1,7 @@
 import styled from "@emotion/styled"
 
 const BackgroundImage = styled("div") ({
-    height: 'calc(100% - 60px)',
+    height: 'calc(100vh - 100px)',
     position: 'relative', 
     background: 'url("/MainPage_bg.jpg")',
     backgroundRepeat: 'no-repeat',
