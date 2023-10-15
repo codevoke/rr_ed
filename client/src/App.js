@@ -1,3 +1,4 @@
+import { ThemeProvider, createTheme } from '@mui/material/styles';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { BrowserView, MobileView } from 'react-device-detect';
 import { ToastContainer } from 'react-toastify';
@@ -17,9 +18,26 @@ import MobileAboutPage from './Mobile/Pages/About';
 
 import './App.css';
 
+const lightTheme = createTheme({
+  palette: {
+    mode: 'light',
+    background: {
+      default: "#ffffff"
+    }
+  }
+});
+const darkTheme = createTheme({
+  palette: {
+    mode: 'dark',
+    background: {
+      default: '#121212',
+    }
+  }
+});
+
 function App() {
   return (
-    <>
+    <ThemeProvider theme={lightTheme}>
       {/* pc version */}
       <BrowserView>
         <BrowserRouter>
@@ -53,7 +71,7 @@ function App() {
             draggable
             pauseOnHover
             theme="colored"/>
-    </>
+    </ThemeProvider>
   );
 }
 

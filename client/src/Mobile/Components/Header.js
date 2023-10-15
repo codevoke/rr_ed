@@ -7,6 +7,12 @@ import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
 import LeftMenu from './LeftMenu';
 import { useNavigate } from 'react-router-dom';
+import styled from '@emotion/styled';
+
+const AppHeader = styled(AppBar) ({
+    background: '#121212',
+    height:'60px'
+})
 
 export default function MobileHeader() {
     const navigate = useNavigate();
@@ -15,23 +21,23 @@ export default function MobileHeader() {
         <>
             <LeftMenu isOpen={drawerState} setIsOpen={setDrawerState}/>
             <Box sx={{ flexGrow: 1 }} >
-                <AppBar position="fixed" style={{ color: 'white', height:'60px' }}>
-                    <Toolbar>
-                    <IconButton
-                        size="large"
-                        edge="start"
-                        color="inherit"
-                        aria-label="menu"
-                        sx={{ mr: 2 }}
-                        onClick={() => {setDrawerState(true); console.log(drawerState)}}
-                    >
-                        <MenuIcon />
-                    </IconButton>
-                    <Button variant='text' onClick={()=>{navigate('/login')}}>
-                        Вход
-                    </Button>
+                <AppHeader position="fixed">
+                    <Toolbar sx={{ display: 'flex', justifyContent: 'space-between' }}>
+                        <IconButton
+                            size="large"
+                            edge="start"
+                            color="inherit"
+                            aria-label="menu"
+                            sx={{ mr: 2 }}
+                            onClick={() => {setDrawerState(true); console.log(drawerState)}}
+                        >
+                            <MenuIcon />
+                        </IconButton >
+                        <Button variant='outlined' onClick={()=>{navigate('/login')}}>
+                            Вход
+                        </Button>
                     </Toolbar>
-                </AppBar>
+                </AppHeader>
             </Box>
         </>
     );

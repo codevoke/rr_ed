@@ -10,8 +10,9 @@ export default function LeftMenu (props) {
             anchor="left"
             open={isOpen}
             onClose={() => {setIsOpen(false);}}
+            
         >
-            <List>
+            <List style={{backgroundImage: 'none'}}>
                 <ListItemButton>
                     <ListItemText primary="Главная" onClick={()=>{ setIsOpen(false); navigate('/')}} />
                 </ListItemButton>
