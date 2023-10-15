@@ -5,12 +5,8 @@ import { useState, useEffect } from "react";
 export default function LeftMenu (props) {
     
     const { isOpen, setIsOpen } = props;
-    const [drawerState, setDrawerState] = useState(isOpen);
     const navigate = useNavigate();
 
-    useEffect(() => {
-        setDrawerState(isOpen);
-    }, [isOpen]);
     console.log(isOpen)
     return (
         <Drawer 
