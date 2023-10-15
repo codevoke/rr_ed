@@ -26,6 +26,7 @@ const lightTheme = createTheme({
     }
   }
 });
+/*
 const darkTheme = createTheme({
   palette: {
     mode: 'dark',
@@ -34,7 +35,7 @@ const darkTheme = createTheme({
     }
   }
 });
-
+*/
 function App() {
   return (
     <ThemeProvider theme={lightTheme}>
