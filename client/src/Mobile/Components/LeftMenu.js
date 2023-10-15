@@ -1,4 +1,4 @@
-import { Divider, Drawer, List, ListItemButton, ListItemText } from "@mui/material";
+import { Divider, List, ListItemButton, ListItemText, SwipeableDrawer } from "@mui/material";
 import { useNavigate } from 'react-router-dom';
 
 export default function LeftMenu (props) {
@@ -8,7 +8,7 @@ export default function LeftMenu (props) {
 
     console.log(isOpen)
     return (
-        <Drawer 
+        <SwipeableDrawer 
             anchor="left"
             open={isOpen}
         >
@@ -27,6 +27,6 @@ export default function LeftMenu (props) {
                     <ListItemText primary="Войти" onClick={()=>{ setIsOpen(false); navigate('/login') }} />
                 </ListItemButton>
             </List>
-        </Drawer>
+        </SwipeableDrawer>
     );
 }
