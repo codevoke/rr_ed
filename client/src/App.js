@@ -60,7 +60,7 @@ function App() {
           <Routes>
             <Route path="/about" element={<MobileAboutPage />} />
             <Route path="/hw" element={<HomeworkNav />} />
-            <Route path="/hw/:NavClass" element={<HomeworkNavL />}
+            <Route path="/hw/:NavClass" element={<HomeworkNavL />} />
             <Route path="*" element={<MobileMainPage />} />
           </Routes>
         </BrowserRouter>
