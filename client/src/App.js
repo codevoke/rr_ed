@@ -37,10 +37,7 @@ const darkTheme = createTheme({
   }
 });
 */
-<<<<<<< HEAD
-=======
 
->>>>>>> 3b02328 (updates*)
 function App() {
   return (
     <ThemeProvider theme={lightTheme}>
