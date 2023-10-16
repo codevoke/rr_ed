@@ -8,6 +8,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import Header from './Desktop/Components/Header';
 import MainPage from './Desktop/Pages/MainPage';
 import HomeworkNav from './Desktop/Pages/Homework_nav';
+import HomeworkNavL from './Desktop/Pages/Homework_nav_l';
 import About from './Desktop/Pages/About';
 
 // mobile version
@@ -36,6 +37,10 @@ const darkTheme = createTheme({
   }
 });
 */
+<<<<<<< HEAD
+=======
+
+>>>>>>> 3b02328 (updates*)
 function App() {
   return (
     <ThemeProvider theme={lightTheme}>
@@ -46,6 +51,7 @@ function App() {
           <Routes>
             <Route path="*" element={<MainPage />} />
             <Route path="/about" element={<About />} />
+            <Route path="/hw/:NavClass" element={<HomeworkNavL />} />
             <Route path="/hw" element={<HomeworkNav />} />
           </Routes>
         </BrowserRouter>

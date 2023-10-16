@@ -1,5 +1,9 @@
 import styled from "@emotion/styled"
+<<<<<<< HEAD
 import { Breadcrumbs, Link, List, ListItem, ListItemButton } from "@mui/material"
+=======
+import { Breadcrumbs, List, ListItem, ListItemButton, Typography } from "@mui/material"
+>>>>>>> 3b02328 (updates*)
 import { useNavigate } from "react-router-dom"
 
 const PathWrapper = styled("div") ({
@@ -17,9 +21,7 @@ export default function HomeworkNav() {
         <>
             <PathWrapper>
                 <Breadcrumbs aria-label="breadcrumb">
-                    <Link underline="hover" color="inherit" onClick={()=>{ navigate('/hw') }} sx={{cursor: 'pointer', userSelect: 'none'}}>
-                        Навигация
-                    </Link>
+                    <Typography color="text.primary">Навигация</Typography>
                 </Breadcrumbs>
             </PathWrapper>
             <List dense={true}>
