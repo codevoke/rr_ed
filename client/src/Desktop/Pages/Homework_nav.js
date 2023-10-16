@@ -1,9 +1,5 @@
 import styled from "@emotion/styled"
-<<<<<<< HEAD
-import { Breadcrumbs, Link, List, ListItem, ListItemButton } from "@mui/material"
-=======
 import { Breadcrumbs, List, ListItem, ListItemButton, Typography } from "@mui/material"
->>>>>>> 3b02328 (updates*)
 import { useNavigate } from "react-router-dom"
 
 const PathWrapper = styled("div") ({
